@@ -13,7 +13,7 @@ const getDatosCiudad = async (lat,lon) => {
 }
 
 const getCoordenadas = async (ciudad,pais) => {
-  const resultado = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=7fb5c1a57477a9413791eceb21f426c2`);
+  const resultado = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&appid=7fb5c1a57477a9413791eceb21f426c2`);
   const coordenadas = await resultado.json();
   return coordenadas
 }
@@ -33,8 +33,6 @@ const getDatos = async (ciudad,pais) => {
   return datosObj
 }
 
-getDatos('Salta','AR');
-
 const setDatos = async () => {
   let ciudad = document.getElementById('nombreCiudad').value;
   let codigo = document.getElementById('codPais').value;
@@ -52,12 +50,12 @@ const setDatos = async () => {
 
   const card = (
     `
-    <div class="card text-center" style="width: 18rem;">
+    <div class="card-fluid text-center mt-5" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title fs-1 fw-bold">${datosClima.name}</h5>
+        <h5 class="card-title fs-2 fw-bold">${datosClima.name}</h5>
         <img src="https://openweathermap.org/img/wn/${codigoImg}@2x.png" class="card-img w-25" alt="...">
         <p class="card-text fs-1 fw-bold">${datosClima.main.temp}°C</p>
-        <p class="card-text">${textClima}</p>
+        <p class="card-text fs-5">${textClima}</p>
       </div>
     </div>
     `
@@ -65,10 +63,10 @@ const setDatos = async () => {
 
   const card1 = (
     `
-    <div class="card text-center" style="width: 18rem;">
+    <div class="card text-center mb-3" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">Minima</h5>
-        <p class="card-text">${datosClima.main.temp_min}°C</p>
+        <h5 class="card-title fs-4">Minima</h5>
+        <p class="card-text fs-5 fw-bold">${datosClima.main.temp_min}°C</p>
       </div>
     </div>
     `
@@ -76,10 +74,10 @@ const setDatos = async () => {
 
   const card2 = (
     `
-    <div class="card text-center" style="width: 18rem;">
+    <div class="card text-center mb-3" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">Maxima</h5>
-        <p class="card-text">${datosClima.main.temp_max}°C</p>
+        <h5 class="card-title fs-4">Maxima</h5>
+        <p class="card-text fs-5 fw-bold">${datosClima.main.temp_max}°C</p>
       </div>
     </div>
     `
@@ -90,3 +88,4 @@ const setDatos = async () => {
   div2.innerHTML = card2;
 }
 
+setDatos();

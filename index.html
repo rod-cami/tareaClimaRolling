@@ -11,9 +11,9 @@
 </head>
 <body class="bgPer">
   <main>
-    <section class="container-xl">
+    <section class="container-xl mb-5 mt-5">
       <div class="mb-5 mt-5">
-        <h1 class="text-center">Clima del Mundo</h1>
+        <h1 class="text-first title">Clima del Mundo</h1>
       </div>
       <div class="mt-5">
         <div class="mt-5">
@@ -21,11 +21,11 @@
             <div class="row">
               <div class="col-6 mb-3">
                 <label class="form-label">Nombre Ciudad</label>
-                <input type="text" class="form-control" id="nombreCiudad" value="Salta" aria-describedby="emailHelp">
+                <input type="text" class="form-control bgInput text-white" id="nombreCiudad" value="Salta" aria-describedby="emailHelp">
               </div>
               <div class="col-6 mb-3">
                 <label class="form-label">Código de Pais</label>
-                <input type="text" class="form-control" value="AR" id="codPais">
+                <input type="text" class="form-control text-white bgInput" value="AR" id="codPais">
               </div>
               <div class="col-3">
                 <button type="button" class="btn btn-primary"  onclick="setDatos()">Consultar</button>
@@ -48,6 +48,9 @@
       </div>
     </section>
   </main>
+  <footer class="w-100 bgFoot mt-5 py-4">
+    <p class="text-center text-white mt-3">© Todos los derechos reservados</p>
+  </footer>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <script src="./app/app.js"></script>

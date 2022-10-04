@@ -1,13 +1,47 @@
 .bgPer{
-  background-color: #9F86C0;
+  background-color: #fdfffc;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .tamanoDiv{
-  background-color: #7234c4;
+  background-color: #011627;
+  border-radius: 7px;
 }
 
-.card{
+.card-fluid, .card{
   background-color: transparent;
   border-color: transparent;
   color: white;
+}
+
+.title{
+  color: #011627;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn{
+  background-color: #ce1e32;
+  border-color: #ce1e32;
+}
+
+.btn:focus, .btn:hover{
+  background-color: #8f1120;
+  border-color: #8f1120;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: #8f1120;
+  border-color: #8f1120;
+}
+
+.bgInput, .bgInput:focus, .bgInput:hover, .bgInput:active{
+  background-color: #011627;
+}
+
+.footer{
+  height: 200px;
+}
+
+.bgFoot{
+  background-color: #011627;
 }
