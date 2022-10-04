@@ -3,7 +3,11 @@
 }
 
 .tamanoDiv{
-  width: 1000px;
-  height: 400px;
   background-color: #7234c4;
+}
+
+.card{
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
 }

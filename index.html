@@ -21,21 +21,30 @@
             <div class="row">
               <div class="col-6 mb-3">
                 <label class="form-label">Nombre Ciudad</label>
-                <input type="text" class="form-control" id="nombreCiudad" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="nombreCiudad" value="Salta" aria-describedby="emailHelp">
               </div>
               <div class="col-6 mb-3">
                 <label class="form-label">Código de Pais</label>
-                <input type="text" class="form-control" id="codPais">
+                <input type="text" class="form-control" value="AR" id="codPais">
               </div>
               <div class="col-3">
-                <button type="button" class="btn btn-primary">Consultar</button>
+                <button type="button" class="btn btn-primary"  onclick="setDatos()">Consultar</button>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="tamanoDiv mt-5">
-
+      <div class="w-100 tamanoDiv mt-5">
+        <div class="d-flex justify-content-center">
+          <div id="card">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center" id="minima"> 
+          </div>
+          <div class="col-6 d-flex justify-content-center" id="maxima">
+          </div>
+        </div>
       </div>
     </section>
   </main>
